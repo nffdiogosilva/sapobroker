@@ -1,4 +1,4 @@
-from __future__ import with_statement #for python 2.5
+ #for python 2.5
 
 from Broker.Messages import Message, Subscribe, Unsubscribe, Acknowledge, Publish, Acknowledge, Notification, Poll, Fault, Ping, Pong, Accepted
 from Broker.Transport import TCP, UDP
@@ -7,7 +7,7 @@ from Broker.Clients import Minimal
 import collections
 
 import threading
-from Queue import Queue
+from queue import Queue
 
 from uuid import uuid1 as uuid
 

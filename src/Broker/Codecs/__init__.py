@@ -1,13 +1,13 @@
 __all__ = []
 try:
-    from Protobuf import Codec as Protobuf
+    from .Protobuf import Codec as Protobuf
     Codec = Protobuf
     __all__.append('Protobuf')
 except ImportError:
     pass
 
 try:
-    from Thrift import Codec as Thrift
+    from .Thrift import Codec as Thrift
     Codec = Thrift
     __all__.append('Thrift')
 except ImportError:

@@ -1,4 +1,4 @@
-from Base import Transport as BaseTransport, Message
+from .Base import Transport as BaseTransport, Message
 import socket
 import logging
 LOG = logging.getLogger('Broker.Transport.INET')
@@ -37,7 +37,7 @@ class Transport(BaseTransport):
         try:
             self.__socket.sendall(header)
             self.__socket.sendall(message.payload)
-        except Exception, exception:
+        except Exception as exception:
             raise DisconnectedError("""Broker server at %s is dead. Can't write message data %r (%r)""" % (self.endpoint(), bytes(message), exception))
 
     def __read_len(self, length):
@@ -45,7 +45,7 @@ class Transport(BaseTransport):
         Reads length bytes from the server.
         Not EINTR safe (like all python IO?)
         """
-        data = bytes('')
+        data = bytes('', encoding='utf8')
         while length:
             read = self.__socket.recv(length)
             if '' == read:

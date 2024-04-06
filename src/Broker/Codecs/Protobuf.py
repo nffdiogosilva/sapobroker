@@ -1,4 +1,4 @@
-from __future__ import absolute_import
+
 
 from .autogen import protobuf_2
 from ..Transport import Message as TransportMessage

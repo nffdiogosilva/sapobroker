@@ -46,4 +46,4 @@ class Message:
 
     @classmethod
     def meta_from_header(cls, data):
-        return dict( zip( ['type', 'version', 'length'], cls._packer.unpack(data)))
+        return dict( list(zip( ['type', 'version', 'length'], cls._packer.unpack(data))))
