@@ -1,4 +1,4 @@
-from INET import Transport as INET
+from .INET import Transport as INET
 
 import socket
 import logging
@@ -29,6 +29,6 @@ class Transport(INET):
             #after 5 failed probes (5 minutes) the connection is considered to be dead
             self.__socket.setsockopt(socket.SOL_TCP, socket.TCP_KEEPCNT, 5)
 
-        except Exception, ex:
+        except Exception as ex:
             LOG.warning("Socket options failed. %s", ex)
 

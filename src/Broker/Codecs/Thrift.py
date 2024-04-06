@@ -1,4 +1,4 @@
-from __future__ import absolute_import
+
 
 from .autogen.thrift.broker import ttypes
 from thrift.protocol import TBinaryProtocol

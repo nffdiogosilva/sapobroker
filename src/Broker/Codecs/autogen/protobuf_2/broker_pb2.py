@@ -92,14 +92,14 @@ _ATOM_PARAMETER = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='name', full_name='sapo_broker.Atom.Parameter.name', index=0,
       number=1, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='value', full_name='sapo_broker.Atom.Parameter.value', index=1,
       number=2, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -141,7 +141,7 @@ _ATOM_BROKERMESSAGE = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='message_id', full_name='sapo_broker.Atom.BrokerMessage.message_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -183,7 +183,7 @@ _ATOM_PUBLISH = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='action_id', full_name='sapo_broker.Atom.Publish.action_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -197,7 +197,7 @@ _ATOM_PUBLISH = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='destination', full_name='sapo_broker.Atom.Publish.destination', index=2,
       number=3, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -225,14 +225,14 @@ _ATOM_POLL = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='action_id', full_name='sapo_broker.Atom.Poll.action_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='destination', full_name='sapo_broker.Atom.Poll.destination', index=1,
       number=2, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -260,7 +260,7 @@ _ATOM_ACCEPTED = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='action_id', full_name='sapo_broker.Atom.Accepted.action_id', index=0,
       number=1, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -281,21 +281,21 @@ _ATOM_ACKNOWLEDGEMESSAGE = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='action_id', full_name='sapo_broker.Atom.AcknowledgeMessage.action_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='message_id', full_name='sapo_broker.Atom.AcknowledgeMessage.message_id', index=1,
       number=2, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='destination', full_name='sapo_broker.Atom.AcknowledgeMessage.destination', index=2,
       number=3, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -316,14 +316,14 @@ _ATOM_SUBSCRIBE = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='action_id', full_name='sapo_broker.Atom.Subscribe.action_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='destination', full_name='sapo_broker.Atom.Subscribe.destination', index=1,
       number=2, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -351,14 +351,14 @@ _ATOM_UNSUBSCRIBE = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='action_id', full_name='sapo_broker.Atom.Unsubscribe.action_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='destination', full_name='sapo_broker.Atom.Unsubscribe.destination', index=1,
       number=2, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -386,14 +386,14 @@ _ATOM_NOTIFICATION = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='destination', full_name='sapo_broker.Atom.Notification.destination', index=0,
       number=1, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='subscription', full_name='sapo_broker.Atom.Notification.subscription', index=1,
       number=2, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -428,28 +428,28 @@ _ATOM_FAULT = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='action_id', full_name='sapo_broker.Atom.Fault.action_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='fault_code', full_name='sapo_broker.Atom.Fault.fault_code', index=1,
       number=2, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='fault_message', full_name='sapo_broker.Atom.Fault.fault_message', index=2,
       number=3, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='fault_detail', full_name='sapo_broker.Atom.Fault.fault_detail', index=3,
       number=4, type=9, cpp_type=9, label=1,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -470,7 +470,7 @@ _ATOM_PING = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='action_id', full_name='sapo_broker.Atom.Ping.action_id', index=0,
       number=1, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -491,7 +491,7 @@ _ATOM_PONG = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='action_id', full_name='sapo_broker.Atom.Pong.action_id', index=0,
       number=1, type=9, cpp_type=9, label=2,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -512,14 +512,14 @@ _ATOM_AUTHENTICATION = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='action_id', full_name='sapo_broker.Atom.Authentication.action_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='authentication_type', full_name='sapo_broker.Atom.Authentication.authentication_type', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -533,7 +533,7 @@ _ATOM_AUTHENTICATION = descriptor.Descriptor(
     descriptor.FieldDescriptor(
       name='user_id', full_name='sapo_broker.Atom.Authentication.user_id', index=3,
       number=4, type=9, cpp_type=9, label=1,
-      default_value=unicode("", "utf-8"),
+      default_value=str(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -703,67 +703,50 @@ _ATOM_ACTION.fields_by_name['action_type'].enum_type = _ATOM_ACTION_ACTIONTYPE
 _ATOM.fields_by_name['header'].message_type = _ATOM_HEADER
 _ATOM.fields_by_name['action'].message_type = _ATOM_ACTION
 
-class Atom(message.Message):
-  __metaclass__ = reflection.GeneratedProtocolMessageType
-  
-  class Parameter(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+class Atom(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
+  class Parameter(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_PARAMETER
   
-  class Header(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Header(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_HEADER
   
-  class BrokerMessage(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class BrokerMessage(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_BROKERMESSAGE
   
-  class Publish(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Publish(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_PUBLISH
   
-  class Poll(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Poll(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_POLL
   
-  class Accepted(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Accepted(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_ACCEPTED
   
-  class AcknowledgeMessage(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class AcknowledgeMessage(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_ACKNOWLEDGEMESSAGE
   
-  class Subscribe(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Subscribe(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_SUBSCRIBE
   
-  class Unsubscribe(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Unsubscribe(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_UNSUBSCRIBE
   
-  class Notification(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Notification(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_NOTIFICATION
   
-  class Fault(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Fault(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_FAULT
   
-  class Ping(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Ping(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_PING
   
-  class Pong(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Pong(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_PONG
   
-  class Authentication(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Authentication(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_AUTHENTICATION
   
-  class Action(message.Message):
-    __metaclass__ = reflection.GeneratedProtocolMessageType
+  class Action(message.Message, metaclass=reflection.GeneratedProtocolMessageType):
     DESCRIPTOR = _ATOM_ACTION
   DESCRIPTOR = _ATOM
 

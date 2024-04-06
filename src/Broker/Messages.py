@@ -1,5 +1,6 @@
 from datetime import datetime
-from urllib import urlopen, urlencode
+from urllib.request import urlopen
+from urllib.parse import urlencode
 from xml.dom.minidom import parseString
 import types
 
@@ -8,7 +9,7 @@ def todate(date):
         return date
     elif isinstance( date, datetime ):
         return date
-    elif type(date) in (types.IntType, types.FloatType):
+    elif type(date) in (int, float):
         return datetime.utcfromtimestamp(date)
     else:
         #XXX warn

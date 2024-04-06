@@ -5,5 +5,5 @@
 #
 
 from thrift.Thrift import *
-from ttypes import *
+from .ttypes import *
 

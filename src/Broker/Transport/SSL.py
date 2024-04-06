@@ -1,8 +1,8 @@
-from TCP import Transport as TCP
+from .TCP import Transport as TCP
 
 import logging
 try:
-    from ssl import wrap_socket
+    from .ssl import wrap_socket
 except ImportError:
     #try old socket.ssl interface
     from socket import ssl as wrap_socket

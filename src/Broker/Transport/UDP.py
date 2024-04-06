@@ -1,4 +1,4 @@
-from INET import Transport as INET
+from .INET import Transport as INET
 
 DEFAULT_PORT=3323
 DEFAULT_HOST='localhost'
